@@ -1,0 +1,106 @@
+---
+layout: empty_site
+title: Sebastian Heckers
+---
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/assets/imgs/icons/web-logo.svg">
+
+    <link rel="stylesheet" href="/assets/css/default_style.css" type="text/css">
+    <script src="/assets/js/dark-mode-toggle.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/start_stylesheet.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+
+    <title>Start - S.H.</title>
+</head>
+        
+<body>					
+    <!-- Inhalt -->    
+    <div class="full_background">
+        <div class="top_background">
+
+            <!-- Dark-Mode Toggle -->
+            <span style="float: right; top: 0; right:0; margin-right: 1vw;">
+                {% include darkmode_switch.html %}
+            </span>
+
+            <!-- Visitenkarte -->
+            <div class="top_card">
+        
+                <!-- Content -->
+                <div style="padding:10%; width: 80%; overflow: hidden;">
+                    <!-- Text & Links -->
+                    <div style="width: 59%; float: left;"> 
+                        <p> Hello, I'm ... </p>
+                        <h1> Sebastian Heckers </h1>
+                        <p> I am Computational Science Engineering Master student at the ETH Zürich. Here are some insights on my studies and my fields of interest. <br> <br> Enjoy my website. </p>
+                        <div style="position: absolute; bottom: 0; left:0; margin:10%; width:45%;">
+                            <a href="/projects.html" style="text-decoration:none;">
+                                <div class="top_button" style="width: 40%; float: left;"> <p>Check out my projects &#129058;</p> </div></a>
+                            <a href="/about.html" style="text-decoration:none;">
+                                <div class="top_button" style="margin-left: 59%;width:40%;"> <p>See my CV &#129058;</p> </div></a>
+                        </div>
+                    </div>
+                    <!-- Bild -->
+                    <div style="position: absolute;margin-left: 55%; top: 10%; width:30%;float:right;">
+                        <img src="/assets/imgs/000_BA_Titelseite.png" alt="..." width="100%" height="auto" style="border-radius:2vw;">
+                    </div>
+                </div>
+            </div>
+
+            <arrow> &#8964; </arrow>
+        </div>
+    
+        <div class="content">
+        
+            <article>
+                <div style="flex: 0 0 40%;">
+                    <img src="https://www.scholtysik.ch/dam/jcr:97be1ffb-a7e7-49a3-ae47-668d295f210e/scholtysik_eth_zuerich_header_3000x2000.jpg" alt="main building ETHZ" width="100%" height="auto" style="border-radius: 2vw;">
+                </div>
+                <div style="flex: 1; margin-left: 20px;">
+                    <p>From 2020 to 2023 I studied at the ETH Zürich. Although I had to start off in the Corona-time I could visit 
+                        many great lectures and events. I was especially interested in applied mathematics and more informatic, technical
+                        courses. I choose elective courses for Physic-based Simulation, Visual Computing and Computational Physic. 
+                        This lead me to my specialisation Robotics. <br> <br>
+                        Twice for the course 'System Programming & Computer Architecture' and once for 'Informatik II (D-ITET)' I could 
+                        take over the role as student teaching assistant. Once a week I could hold an exercise session and help other 
+                        students to cope with the lecture material.</p>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div style="flex: 0 0 60%;">
+                    <p>Besides the lectures I also participated in other events and courses at the ETHZ. A highlight was the 
+                        PASC Conference. As a volunteer I could look behind the scenes, take part in my first conferences and
+                        learn a lot about this field.</p>
+                </div>
+                <div style="flex: 0 0 39%; margin-left: 20px;">
+                    <img src="https://pasc24.pasc-conference.org/wp-content/uploads/2023/07/PASC23_27.6.2023_005.jpg" alt="student volunteer group photo | PASC23" width="100%" height="auto" style="border-radius: 2vw;">
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div style="flex: 0 0 40%;">
+                    <img src="/assets/imgs/alps.png" alt="main building ETHZ" width="100%" height="auto" style="border-radius: 2vw;">
+                </div>
+                <div style="flex: 1; margin-left: 20px;">
+                    <p>In my free time, I often work on different projects, read or get a bit sporty. Then I usually go into 
+                        the mountains. With my friends and family I go hiking  in summer and skiing in winter. I have started 
+                        to get a pilot's license for paragliding and hope to glide down the mountains in future.</p>
+                </div>
+            </article>
+            <hr>
+    
+        </div>
+    </div>
+    
+    <!-- Fuss-->
+    {% include footer_standard.html %}
+    
+</body>

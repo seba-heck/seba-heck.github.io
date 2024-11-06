@@ -1,0 +1,59 @@
+---
+layout: project_site
+title: "SE Project: Black Peter"
+project_title: Black Peter
+project_subtitle: Software Engineering Project
+project_type: Course Project
+project_front: /assets/imgs/se_project_blackpeter/logo.jpg
+project_code: C++
+project_time: 2023
+project_place: ETH Zürich
+project_link_desc: true
+project_link_imgs: true
+project_link_files: true
+slideshow:
+    tag: 1
+    imgs:
+        - path: /assets/imgs/se_project_blackpeter/connection_panel.png
+          number: 1
+          caption: Screenshot of the Connection panel
+        - path: /assets/imgs/se_project_blackpeter/main_panel.png
+          number: 2
+          caption: Screenshot of the Main panel
+        - path: /assets/imgs/se_project_blackpeter/revers.png
+          number: 3
+          caption: ...
+        - path: /assets/imgs/se_project_blackpeter/revers.png
+          number: 4
+          caption: ...
+        - path: /assets/imgs/se_project_blackpeter/revers.png
+          number: 5
+          caption: ...
+    total: 5
+---
+<a id="desc">
+    <h3> Description </h3>
+    <p> This is a C++ implementation of the card game "Black Peter" (German: "Schwarzer Peter"). 
+      The implementation encompasses a client/server architecture with an interface that supports multiple players playing the game together. 
+      It uses wxWidgets for the GUI, sockpp for the network interface, RapidJSON for object serialization, and GoogleTest for the unit tests. 
+      <br>This is a semester project for the course Software Engineering (FS23) at ETH Zürich.</p>
+</a>
+
+<br>
+    
+<a id="imgs">
+    <h3> Example Images </h3>
+    {% include slideshow.html data=page.slideshow %}
+</a>
+
+<br>
+
+<a id="files">
+  <h3> Files </h3>
+
+  {% include markdown_box.html path="/files/SE_README.md" title="Projects README.md" %}
+
+  <br>
+
+  {% include markdown_box.html path="/files/SE_GAMERULES.md" title="Black Peter GAMERULES.md" %}
+</a>

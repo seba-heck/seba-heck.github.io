@@ -1,0 +1,71 @@
+---
+layout: project_site
+title: Semester Thesis
+project_title: Dataset Generation of Multi-Material Deformable Objects
+project_type: Semester Thesis
+project_front: /assets/imgs/008_SA_titelseite.png
+project_code: Python, MuJoCo
+project_time: 2024
+project_place: ETH Zürich
+project_link_abs: true
+project_link_imgs: true
+project_link_videos: true
+slideshow:
+    tag: 1
+    imgs:
+        - path: /assets/imgs/009_SA_m_drop_image_1.png
+          number: 1
+          caption: Example Scenario 'Drop'
+        - path: /assets/imgs/010_SA_m_finger_image_1.png
+          number: 2
+          caption: Example Scenario 'Poking'
+        - path: /assets/imgs/011_SA_grasp_image_1.png
+          number: 3
+          caption: Example Scenario 'Gripper'
+        - path: /assets/imgs/012_SA_m_press_image_2.png
+          number: 4
+          caption: Example Scenario 'Press'
+        - path: /assets/imgs/013_SA_mesh_visu_1.png
+          number: 5
+          caption: Example Knife
+        - path: /assets/imgs/014_SA_parts_115_c.png
+          number: 6
+          caption: Example of Data Object (ID 115)
+        - path: /assets/imgs/015_SA_parts_2011_4.png
+          number: 7
+          caption: Example of Data Object (ID 2011)
+        - path: /assets/imgs/016_SA_parts_3820_2.png
+          number: 8
+          caption: Example of Data Object (ID 3820)
+    total: 8
+---
+<a id="abs">
+    <h3> Abstract </h3>
+    <p>Traditional datasets, however, often rely on abstract, synthetic deformations that
+      fail to capture the rich material properties influencing how objects behave under
+      physical forces. This thesis addresses this limitation by introducing a novel dataset
+      generation pipeline designed to create time-series data of multi-material de-
+      formable objects. The dataset encodes both geometric information and material-
+      specific properties by simulating deformations in a physics-based environment
+      using MuJoCo. The pipeline leverages the PartNet dataset and is processed into
+      tetrahedral volume meshes, suitable for simulation, using advanced meshing tech-
+      niques like fTetWild. These meshes are then modelled in MuJoCo and simulated
+      to induce realistic deformations. The resulting dataset captures the time evolution
+      of these deformations, providing a valuable resource for training and evaluating
+      machine learning models aimed at material recognition and robotic interaction.</p>
+</a>
+
+<br>
+    
+<a id="imgs">
+    <h3> Example Images </h3>
+    {% include slideshow.html data=page.slideshow %}
+</a>
+
+<br>
+    
+<a id="videos">
+    <h3> Video Compilation of Examples </h3>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/videoseries?si=Nv67L9YuqkbzjZ5B&amp;list=PLj7mwiS5EnRwWLIT1zrA9QLVDRp0v5zIZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</a>
+        

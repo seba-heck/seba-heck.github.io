@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="/assets/imgs/icons/web-logo.svg">
+
+        <link rel="stylesheet" href="/assets/css/default_style.css">
+        <script src="/assets/js/dark-mode-toggle.js"></script>
+        <script src="/assets/js/copy-code-button.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+
+        <title> {{ page.title }} - S.H.</title>
+    </head>
+
+    <body>
+        <!-- Kopf -->
+        {% include header_standard.html %}
+
+        <!-- Inhalt -->
+        <style>
+            /* Style for an Article in the main content */
+            project-content {
+                display:block;
+                padding: 2%;
+                padding-bottom:100px;
+                padding-right:10%;
+                margin-left:30%;
+            }
+
+            .project-links {
+                display: inline-block;
+                text-decoration: none;
+                border-style: solid;
+                border-width: 0.5px;
+                border-color: var(--font-color);
+                max-width: 10%;
+                float: left;
+                margin-right: 1%;
+                padding: 1%;
+                padding-top: 0;
+                padding-bottom: 0;
+                color: var(--font-color);
+            }
+        </style>
+
+
+        <div style="width:20%; float:left; padding:5%; padding-left:7%; align:right;border-radius: 8px;">
+            <img src="{{ page.project_front }}" alt="teaser image" width="100%" height="auto" style="border: 2px solid #555;">
+        </div>
+
+        <project-content>
+            <h2> {{ page.project_title }} </h2>
+            <h3 style="margin-bottom:0px;"> {{ page.project_subtitle }} </h3>
+            <h5 style="margin-top:0px;"> {{ page.project_type }} </h5>
+            <p> &#9000; {{ page.project_code }} &emsp; &#8986; {{ page.project_time }} &emsp;  &#128205; {{ page.project_place }} </p>
+
+            {% include project_link_list.html %}
+
+            {{ content }}
+
+        </project-content>
+
+        <!-- Fuss-->
+        {% include footer_standard.html %}
+    </body>
+</html>

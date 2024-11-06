@@ -1,0 +1,7 @@
+<div class="code-container">
+    <div class="code-top">
+      > {{ include.language }}
+      <button class="copy-button" onclick="copyToClipboard('{{ include.id }}')"> Copy </button>
+    </div>
+    <pre id="{{ include.id }}"><code>{{ include.content }}</code></pre>
+</div>

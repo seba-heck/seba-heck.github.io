@@ -1,0 +1,110 @@
+---
+layout: project_site
+title: Bachelor Thesis
+project_title: Let the best sim win!
+project_subtitle: Benchmarking simulators for deformable object simulation.
+project_type: Bachelor Thesis
+project_front: /assets/imgs/000_BA_Titelseite.png
+project_code: C++, Python, MuJoCo, Isaac Gym
+project_time: 2024
+project_place: ETH Zürich
+project_link_abs: true
+project_link_imgs: true
+project_link_paper: true
+project_link_videos: true
+project_link_bibtex: true
+slideshow:
+    tag: 1
+    imgs:
+        - path: /assets/imgs/001_BA_viewer_i.png
+          number: 1
+          caption: Viewer Isaac Gym
+        - path: /assets/imgs/002_BA_viewer_m.png
+          number: 2
+          caption: Viewer MuJoCo
+        - path: /assets/imgs/003_BA_tex_m.png
+          number: 3
+          caption: Mesh Examples in MuJoCo
+        - path: /assets/imgs/004_BA_tex_i.png
+          number: 4
+          caption: Deformable Object Example in Isaac Gym
+        - path: /assets/imgs/005_BA_m_drop_image_2.png
+          number: 5
+          caption: Scenario 'Drop' Example
+        - path: /assets/imgs/006_BA_m_slide_image_2.png
+          number: 6
+          caption: Scenario 'Slide' Example
+        - path: /assets/imgs/007_BA_m_grasp_image_1.png
+          number: 7
+          caption: Scenario 'Grasp' Example
+    total: 7
+---
+<a id="abs">
+    <h3> Abstract </h3>
+    <p>This thesis presents a comprehensive evaluation of physics-based simulation frameworks
+        for deformable object manipulation in robotics. The study focuses on benchmarking the
+        performance of the simulation frameworks MuJoCo and Isaac Gym across various metrics
+        such as rendering capability, memory usage, speed, and compatibility with open-source
+        software. Through extensive testing and analysis, it was found that MuJoCo offers highly
+        optimized simulations on single CPU cores, albeit with stability limitations. On the other
+        hand, Isaac Gym provides GPU-accelerated solvers that excel in handling large meshes
+        with stability and robustness. The choice between the two frameworks depends on the
+        specific requirements of the application. While MuJoCo is suitable for a wide range of
+        tasks with efficient CPU simulations, Isaac Gym is preferable for scenarios involving large
+        deformable objects and reinforcement learning training.</p>
+</a>
+
+<br>
+    
+<a id="imgs">
+    <h3> Example Images </h3>
+    {% include slideshow.html data=page.slideshow %}
+</a>
+
+<br>
+
+<a id="paper">
+    <h3> Paper Website </h3>
+    {% include link_box.html 
+        url="https://www.research-collection.ethz.ch/handle/20.500.11850/691505" 
+        img="https://www.research-collection.ethz.ch/themes/Mirage2//images/favicons/apple-touch-icon-180x180-precomposed.png" 
+        website="Research Collection Publication - ETH Zürich"
+        content="<h2>Let the best sim win!</h2>
+        <h3>Benchmarking simulators for deformable objects</h3>
+        <p>
+            Author: Heckers, Sebastian <br>
+            Supervisor: Stelian Coros, Miguel Zamora, Hehui Zheng
+        </p>" 
+        external=true %}
+</a>
+
+<br>
+
+<a id="videos">
+  <h3> Video Compilation of Examples </h3>
+  <div>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/videoseries?si=Nv67L9YuqkbzjZ5B&amp;list=PLj7mwiS5EnRwWLIT1zrA9QLVDRp0v5zIZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</a>
+
+<br>
+
+<a id="bibtex">
+  <h3> BibTex Reference </h3>
+  {% include code-box.html id="bibtex-code-ba" language="BibTex"
+    content="    @MASTERSTHESIS{20.500.11850/691505,
+      copyright = {Creative Commons Attribution 4.0 International},
+      year = {2024-01},
+      type = {Bachelor Thesis},
+      author = {Heckers, Sebastian},
+      size = {48 p.},
+      abstract = {This thesis presents a comprehensive evaluation of physics-based simulation frameworks for deformable object manipulation in robotics. The study focuses on benchmarking the performance of the simulation frameworks MuJoCo and Isaac Gym across various metrics such as rendering capability, memory usage, speed, and compatibility with open-source software. Through extensive testing and analysis, it was found that MuJoCo offers highly optimized simulations on single CPU cores, albeit with stability limitations. On the other hand, Isaac Gym provides GPU-accelerated solvers that excel in handling large meshes with stability and robustness. The choice between the two frameworks depends on the specific requirements of the application. While MuJoCo is suitable for a wide range of tasks with efficient CPU simulations, Isaac Gym is preferable for scenarios involving large deformable objects and reinforcement learning training.},
+      language = {en},
+      address = {Zurich},
+      publisher = {ETH Zurich},
+      DOI = {10.3929/ethz-b-000691505},
+      title = {Let the best sim win!. Benchmarking simulators for deformable object manipulation},
+      school = {ETH Zurich}
+    }" %}
+</a>
+    

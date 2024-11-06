@@ -1,0 +1,50 @@
+---
+layout: project_site
+title: Matura Thesis
+project_title: Simulationsbasierte Formoptimierung
+project_subtitle: Die Programmierung einer Strukturoptimierung
+project_type: Matura Thesis
+project_front: /assets/imgs/ma-titelseite.jpg
+project_code: Python
+project_time: 2019
+project_place: Kantonsschule Heerbrugg
+project_link_abs: true
+project_link_imgs: true
+slideshow:
+    tag: 1
+    imgs:
+        - path: /assets/imgs/017_MA_testcase.png
+          number: 1
+          caption: Example of Testcase
+        - path: /assets/imgs/018_MA_testcase22.png
+          number: 2
+          caption: Example of Testcase (step 22)
+        - path: /assets/imgs/019_MA_testcase27.png
+          number: 3
+          caption: Example of Testcase (step 27)
+        - path: /assets/imgs/020_MA_spannung.jpg
+          number: 4
+          caption: Diagramm of Surface Tension
+        - path: /assets/imgs/021_MA_graph_25.11.2019-22.51.19.png
+          number: 5
+          caption: Visualisation of moveable nodes
+        - path: /assets/imgs/022_MA_oie_transparent.png
+          number: 6
+          caption: Example of Testcase 'Kerbe'
+    total: 6
+---
+<a id="abs">
+  <h3> Abstract </h3>
+  <p> In dieser Arbeit wird ein Optimierungsalgorithmus für eine Strukturoptimierung mit dem Optimierungsverfahren des 
+    adaptiven Wachstums programmiert. Zur Analyse des Modells wird das FE-Programm ANSYS verwendet. Das gesamte Programm wurde 
+    in Python geschrieben und führt den Optimierungsalgorithmus selbständig aus. Mit einer vollständigen Prozedur der 
+    Optimierungsschleife wird der Optimierungsalgorithmus auch an einem Beispiel dargelegt. Das Ziel des Optimierungsalgorithmus, 
+    die zielgerichtete Verteilung der Oberflächenspannung und die selbständige Ausgabe des optimalen Entwurfs, wurde erreicht.
+    Die Hypothese, die natürliche Wachstumsregel mit dem adaptiven Wachstum als Optimierungsverfahren zu nutzen, wird
+    mit dem Beispiel bestätigt. </p>
+</a>
+
+<a id="imgs">
+  <h3> Example Images </h3>
+  {% include slideshow.html data=page.slideshow %}
+</a>
