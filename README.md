@@ -1,3 +1,4 @@
+[![gh-pages-build](https://github.com/seba-heck/seba-heck.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/seba-heck/seba-heck.github.io/actions/workflows/pages/pages-build-deployment)
 # Portfolio Website: Sebastian Heckers
 
 This repository contains all source files and assets for my personal portfolio website. It uses [jekyll](https://jekyllrb.com/) to build a static website, which is deployed on GitHub pages.
