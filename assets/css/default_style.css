@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, p, ol, ul, dl, dt, dd {
     --font2-color: white;
     --font3-color: #656565;
     --link-color: darkred;
+	--figcaption-color: #656565;
 	/* Icons */
 	--web-logo: url(/assets/imgs/icons/web-logo.svg);
 	--external-link: url(/assets/imgs/icons/external-link-dark.svg);
@@ -43,9 +44,15 @@ h1, h2, h3, h4, h5, p, ol, ul, dl, dt, dd {
     --font2-color: black;	
     --font3-color: #a9a9a9;	
     --link-color: orange;
+	--figcaption-color: #ccc;
 	/* Icons */
 	--web-logo: url(/assets/imgs/icons/web-logo-dark.svg);
 	--external-link: url(/assets/imgs/icons/external-link-light.svg);
+}
+
+figcaption {
+	font-size: small;
+	color: var(--figcaption-color);
 }
 
 /* ====================================================  FOOTER  ==================================================== */
