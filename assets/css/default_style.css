@@ -1,6 +1,7 @@
 /* change FONT */
 html {
     font-family: "Chakra Petch", "Lucida Console", sans-serif;
+    /* font-family: "Chakra Petch", "Lucida Console", sans-serif; */
 }
 
 /* rm default margin */
@@ -10,7 +11,12 @@ body {
     background-color: var(--background-color);
 }
 
-h1, h2, h3, h4, h5, p, ol, ul, dl, dt, dd {
+h1, h2, ol, ul, dl, dt, dd, hr {
+	color: var(--font-color);
+}
+
+h3, h4, h5, p {
+	font-family: "Host Grotesk", Arial, Helvetica, sans-serif;
 	color: var(--font-color);
 }
 
@@ -21,9 +27,9 @@ h1, h2, h3, h4, h5, p, ol, ul, dl, dt, dd {
     --background3-color: #ccc;		
     --accent1-color: #6f1a07;
     --accent2-color: #af9164;
-    --accent3-color: #fede9e;
+    --accent3-color: #0e1428;
     --font-color: #000000;
-    --font2-color: #f7f3e3;
+    --font2-color: var(--background-color);
     --font3-color: #656565;
     --link-color: darkred;
 	--figcaption-color: #656565;
@@ -34,14 +40,14 @@ h1, h2, h3, h4, h5, p, ol, ul, dl, dt, dd {
   
 :root.dark {
 	/* Farben */
-    --background-color: #666;
-    --background2-color: #ccc;	
-    --background3-color: #666;		
-    --accent1-color: darkred;
-    --accent2-color: orange;	
-    --accent3-color: #fede9e;	
-    --font-color: #fff;
-    --font2-color: black;	
+    --background-color: #050a1a;
+    --background2-color: #b3b6b7;	
+    --background3-color: #666;
+    --accent1-color: #6f1a07;
+    --accent2-color: #af9164;
+    --accent3-color: #0e1428;
+    --font-color: #f7f3e3;
+    --font2-color: var(--background-color);	
     --font3-color: #a9a9a9;	
     --link-color: orange;
 	--figcaption-color: #ccc;
