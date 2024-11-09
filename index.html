@@ -21,50 +21,6 @@ title: Sebastian Heckers
 </head>
         
 <body>
-    <style>
-/* Container für die Bilder */
-.image-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
-  grid-template-rows: repeat(2, 1fr);    /* 2 Reihen */
-  gap: 10px; /* Abstand zwischen den Bildern */
-  width: 100%;
-  height: 100%; /* Höhe des Containers auf 100% des Viewports setzen */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Individuelle Bildstile */
-.image-container img {
-  width: 100%; /* Bild passt sich der Breite der Zelle an */
-  height: 100%; /* Bild passt sich der Höhe der Zelle an */
-  object-fit: cover; /* Das Bild wird zugeschnitten und skaliert, sodass es das Quadrat ausfüllt */
-  border-radius: 8px; /* Ecken abrunden */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für die Bilder */
-  transition: transform 0.3s ease; /* Sanfte Animation beim Hover */
-}
-
-.image-container img:hover {
-  transform: scale(1.05); /* Vergrößern beim Hover */
-}
-
-/* Responsives Design */
-@media (max-width: 768px) {
-  .image-container {
-    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten bei mittleren Bildschirmen */
-    grid-template-rows: repeat(2, 1fr);    /* Zwei Reihen */
-  }
-}
-
-@media (max-width: 480px) {
-  .image-container {
-    grid-template-columns: 1fr; /* Eine Spalte bei kleinen Bildschirmen */
-    grid-template-rows: repeat(4, 1fr); /* Vier Reihen */
-  }
-}
-
-    </style>			
-
     <!-- Inhalt -->    
     <div class="full_background">
         <div class="top_background">
