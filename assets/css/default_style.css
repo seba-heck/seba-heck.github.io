@@ -16,14 +16,14 @@ h1, h2, h3, h4, h5, p, ol, ul, dl, dt, dd {
 
 :root {
 	/* Farben */
-    --background-color: #ffffff;
-    --background2-color: #666;	
+    --background-color: #f7f3e3;
+    --background2-color: #b3b6b7;	
     --background3-color: #ccc;		
-    --accent1-color: darkred;
-    --accent2-color: orange;
+    --accent1-color: #6f1a07;
+    --accent2-color: #af9164;
     --accent3-color: #fede9e;
     --font-color: #000000;
-    --font2-color: white;
+    --font2-color: #f7f3e3;
     --font3-color: #656565;
     --link-color: darkred;
 	--figcaption-color: #656565;
