@@ -25,7 +25,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: lightblue url("/assets/imgs/P-start/alps.png") no-repeat;
+    background: lightblue url("/assets/imgs/P-start/IMG_20240905_Saentis-Wanderung_10.jpg") no-repeat;
     /* background: linear-gradient(45deg, hsl(120, 100%, 50%), hsl(180, 100%, 50%), hsl(150, 100%, 50%), hsl(210, 100%, 50%), hsl(180, 100%, 50%), hsl(240, 100%, 50%), hsl(210, 100%, 50%),hsl(270, 100%, 50%), hsl(240, 100%, 50%), hsl(300, 100%, 50%), hsl(270, 100%, 50%), hsl(120, 100%, 50%)); */
     z-index:-1;
     /* background-size: 1000%; */

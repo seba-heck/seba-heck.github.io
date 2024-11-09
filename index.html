@@ -21,9 +21,49 @@ title: Sebastian Heckers
 </head>
         
 <body>
-    <div style="background-color: orange;padding: 10%;">
-        <h1> ! Website under Construction ! </h1>
-    </div>
+    <style>
+/* Container für die Bilder */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+  grid-template-rows: repeat(2, 1fr);    /* 2 Reihen */
+  gap: 10px; /* Abstand zwischen den Bildern */
+  width: 100%;
+  height: 100%; /* Höhe des Containers auf 100% des Viewports setzen */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Individuelle Bildstile */
+.image-container img {
+  width: 100%; /* Bild passt sich der Breite der Zelle an */
+  height: 100%; /* Bild passt sich der Höhe der Zelle an */
+  object-fit: cover; /* Das Bild wird zugeschnitten und skaliert, sodass es das Quadrat ausfüllt */
+  border-radius: 8px; /* Ecken abrunden */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für die Bilder */
+  transition: transform 0.3s ease; /* Sanfte Animation beim Hover */
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Vergrößern beim Hover */
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten bei mittleren Bildschirmen */
+    grid-template-rows: repeat(2, 1fr);    /* Zwei Reihen */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    grid-template-columns: 1fr; /* Eine Spalte bei kleinen Bildschirmen */
+    grid-template-rows: repeat(4, 1fr); /* Vier Reihen */
+  }
+}
+
+    </style>			
 
     <!-- Inhalt -->    
     <div class="full_background">
@@ -53,7 +93,13 @@ title: Sebastian Heckers
                     </div>
                     <!-- Bild -->
                     <div style="position: absolute;margin-left: 55%; top: 10%; width:30%;float:right;">
-                        <img src="/assets/imgs/000_BA_Titelseite.png" alt="..." width="100%" height="auto" style="border-radius:2vw;">
+                        <!-- <img src="/assets/imgs/000_BA_Titelseite.png" alt="..." width="100%" height="auto" style="border-radius:2vw;"> -->
+                        <div class="image-container">
+                            <img src="/assets/imgs/P-start/skifahren-golm.png" alt="Bild 1">
+                            <img src="/assets/imgs/P-start/IMG_20221123_ethz_hg.jpg" alt="Bild 2">
+                            <img src="/assets/imgs/P-start/IMG_20200701_172436_1.jpg" alt="Bild 3">
+                            <img src="/assets/imgs/P-start/zermatt-matterhorn.png" alt="Bild 4">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +140,7 @@ title: Sebastian Heckers
             <hr>
             <article>
                 <div style="flex: 0 0 40%;">
-                    <img src="/assets/imgs/P-start/alps.png" alt="main building ETHZ" width="100%" height="auto" style="border-radius: 2vw;">
+                    <img src="/assets/imgs/P-start/5-seen-wanderung.png" alt="main building ETHZ" width="100%" height="auto" style="border-radius: 2vw;">
                 </div>
                 <div style="flex: 1; margin-left: 20px;">
                     <p>In my free time, I often work on different projects, read or get a bit sporty. Then I usually go into 
