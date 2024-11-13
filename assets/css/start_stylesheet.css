@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     --top-card-text-color: white;
+    --corner-radius: 10px;
 }
 
 .top_background {
@@ -62,8 +63,8 @@
     max-width: 80vw;
     max-height: 80vh;
     overflow: auto;
-    background-color: gray;
-    border-radius: 3vw;
+    background-color: #0E1428;
+    border-radius: var(--corner-radius);
     overflow: hidden;
 }
 
@@ -86,12 +87,12 @@
 .top_button {
     border-style: solid;
     border-width: 0.2vw;
-    border-color: var(--top-card-text-color);
+    border-color: var(--accent1-color);
     border-radius: 2vw;
     padding: 1vw;
 }
 .top_button:hover {
-    background-color: rgba(255, 255, 255, 0.455);
+    background-color: color-mix(in oklab, var(--accent1-color) 50%, #00000000 50%);
 }
 
 article {
@@ -143,4 +144,3 @@ article {
         grid-template-rows: repeat(4, 1fr); /* Vier Reihen */
     }
 }
-  
