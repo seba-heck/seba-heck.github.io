@@ -10,6 +10,7 @@ project_time: 2024
 project_place: ETH Zürich
 project_link_abs: true
 project_link_imgs: true
+project_link_paper: true
 slideshow:
     tag: 1
     imgs:
@@ -32,18 +33,18 @@ slideshow:
 ---
 <a id="abs">
     <h3> Abstract </h3>
-    <p>This thesis presents a comprehensive evaluation of physics-based simulation frameworks
-        for deformable object manipulation in robotics. The study focuses on benchmarking the
-        performance of the simulation frameworks MuJoCo and Isaac Gym across various metrics
-        such as rendering capability, memory usage, speed, and compatibility with open-source
-        software. Through extensive testing and analysis, it was found that MuJoCo offers highly
-        optimized simulations on single CPU cores, albeit with stability limitations. On the other
-        hand, Isaac Gym provides GPU-accelerated solvers that excel in handling large meshes
-        with stability and robustness. The choice between the two frameworks depends on the
-        specific requirements of the application. While MuJoCo is suitable for a wide range of
-        tasks with efficient CPU simulations, Isaac Gym is preferable for scenarios involving large
-        deformable objects and reinforcement learning training.</p>
+    <p>Operator learning is an emerging field in computational science and engineering. Traditional neural networks,
+      typically mapping finite-dimensional Euclidean spaces, have been extended to infinite-dimensional spaces to
+      learn solution operators of partial differential equations (PDEs). Various approaches are examined, including
+      encoder-decoder networks, neural operators, and transformers. This research highlights the significant
+      advancements made by these methods, the applications in different fields, and the practical benefits of these
+      advanced models.</p>
+    <br>
+    <p>Additional Key Words and Phrases: Neural Operator, Fourier neural operator, Convolutional neural operator,
+       Graph neural operator, Encoder-Decoder Network, Transformer</p>
 </a>
+
+
 
 <br>
     
@@ -53,3 +54,37 @@ slideshow:
 </a>
 
 <br>
+
+<a id="paper">
+  <a href="/files/Sebastian_Heckers_CSE_Seminar__Variants_of_Operator_Learning.pdf" style="text-decoration: none; color:#fff; font-size: 20px;">
+    <div style="background-color: var(--accent1-color);
+                border-radius: 8px;
+                padding: 3%;
+                margin-top:3%;
+                text-align: center;
+                box-shadow: 0 0 10px rgba(0,0,0,.5);">
+        Variants of Operator Learning (PDF)
+    </div>
+  </a>
+
+  <object
+    data="/files/Sebastian_Heckers_CSE_Seminar__Variants_of_Operator_Learning.pdf"
+    type="application/pdf"
+    width="100%"
+    height="100%"
+  >
+    <iframe
+      src="/files/Sebastian_Heckers_CSE_Seminar__Variants_of_Operator_Learning.pdf"
+      width="100%"
+      height="100%"
+      style="border: none;"
+    >
+      <p>
+        Your browser does not support PDFs.
+        <a href="/files/Sebastian_Heckers_CSE_Seminar__Variants_of_Operator_Learning.pdf">Download the PDF</a>
+        .
+      </p>
+    </iframe>
+  </object>
+
+</a>
