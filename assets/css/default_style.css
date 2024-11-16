@@ -36,6 +36,7 @@ h3, h4, h5, p {
 	/* Icons */
 	--web-logo: url(/assets/imgs/icons/web-logo.svg);
 	--external-link: url(/assets/imgs/icons/external-link-dark.svg);
+	--github-link: url(/assets/imgs/icons/github-mark.svg);
 }
   
 :root.dark {
@@ -54,6 +55,7 @@ h3, h4, h5, p {
 	/* Icons */
 	--web-logo: url(/assets/imgs/icons/web-logo-dark.svg);
 	--external-link: url(/assets/imgs/icons/external-link-light.svg);
+	--github-link: url(/assets/imgs/icons/github-mark-white.svg);
 }
 
 figcaption {
@@ -161,6 +163,7 @@ img.web-logo {
 
 /* ====================================================  LINK  ==================================================== */
 .link-section {
+	position: relative;
     font-size: 12px;
     font-family: tahoma;
     height: 13em;
@@ -199,6 +202,34 @@ img.web-logo {
     content: var(--external-link);
 }
 
+/* Adjust link-info to display icons in a row */
+.link-info {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    margin: 1vh;
+    border-radius: 0.5vh;
+    font-size: 4vh;
+    justify-content: flex-start;
+    gap: 1vh; /* Space between icons */
+}
+
+/* Adjust styling for the github link */
+.link-github {
+    display: inline-block;
+    content: var(--github-link);
+	bottom: 0;
+    height: 30px;  /* Adjust size */
+    width: auto;
+    max-height: 30px;  /* Limit height if needed */
+}
+
+/* Style for paper icon */
+.link-info p {
+    margin: 0;
+    font-size: 4vh;  /* Adjust size if needed */
+}
 /* ====================================================  TOGGLE  ==================================================== */
 
 .toggle-theme {
