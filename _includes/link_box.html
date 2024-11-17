@@ -2,6 +2,14 @@
     {% if include.external %}
         <img id="icon" class="link-icon" alt="external link" height="30%" width="auto"/>
     {% endif %}
+    <span class="link-info">
+        {% if include.github %}
+            <img id="icon" class="link-github" alt="GitHub link"/>
+        {% endif %}
+        {% if include.paper %}
+            <p> &#128462; </p>
+        {% endif %}
+    </span>
     <div style="width:100%;height:auto;position: relative;">
         <div style="width: 14em; float: left;">
             <img class="link-img" src="{{ include.img }}" alt="teaser image" height="auto" width="auto"/>
