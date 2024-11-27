@@ -1,0 +1,84 @@
+---
+layout: project_site
+title: [titel der webseite]
+project_title: [name/titel des projekts]
+project_subtitle: [untertitel des projekts]
+project_type: [typ/art von projekt]
+project_front: [teaser/titelseiten, Bild an linken Seiten]
+project_code: [verwendete Programmierspachen]
+project_time: [Zeitraum]
+project_place: [Ort]
+project_link_abs: true
+project_link_imgs: true
+project_link_paper: true
+project_link_videos: true
+project_link_bibtex: true
+slideshow:
+    imgs:
+        - path: [Pfad zur Bild-datei]
+          number: [Nummer]
+          caption: [Bildunterschrift]
+    total: [Totale Anzahl Bilder]
+---
+<a id="abs">
+    <h3> Abstract </h3>
+    <p> ... </p>
+</a>
+
+<br>
+    
+<a id="imgs">
+    <h3> Example Images </h3>
+    {% include slideshow.html data=page.slideshow %}
+</a>
+
+<br>
+
+<a id="paper">
+    <h3> Paper Website </h3>
+    {% include link_box.html 
+        url="[URL to Datei]" 
+        img="https://www.research-collection.ethz.ch/themes/Mirage2//images/favicons/apple-touch-icon-180x180-precomposed.png" 
+        website="[Überschrift]"
+        content="<h2> [Titel/Name] </h2>
+        <h3> [Unterschrift/Beschreibung] </h3>
+        <p>
+            Author: ... <br>
+            Supervisor: ...
+        </p>" 
+        external=true %}
+</a>
+
+<a href="[Pfad zur Datei]" style="text-decoration: none; color:#fff; font-size: 20px;">
+    <div style="background-color: var(--accent1-color);
+                border-radius: 8px;
+                padding: 2%;
+                margin-top:3%;
+                text-align: center;
+                box-shadow: 0 0 10px rgba(0,0,0,.5);">
+        [Name des Dokuments (PDF)]
+    </div>
+  </a>
+
+  <br>
+  
+  {% include pdf-box.html path="[Pfad zur Datei]" %}
+
+
+<br>
+
+<a id="videos">
+  <h3> Video Compilation of Examples </h3>
+  <div>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/videoseries?si=Nv67L9YuqkbzjZ5B&amp;list=PLj7mwiS5EnRwWLIT1zrA9QLVDRp0v5zIZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</a>
+
+<br>
+
+<a id="bibtex">
+  <h3> BibTex Reference </h3>
+  {% include code-box.html id="bibtex-code-ba" language="BibTex"
+    content="    ...     " %}
+</a>
+    
