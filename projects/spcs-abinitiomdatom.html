@@ -1,0 +1,119 @@
+---
+layout: project_site
+title: AbInitioMDAtom - SPCS
+project_title: AbInitioMDAtom
+project_subtitle: Ab initio MD simulations of mono- and diatomic gases
+project_type: Course Project
+project_front: [teaser/titelseiten, Bild an linken Seiten]
+project_code: C++, Python
+project_time: 2022
+project_place: ETH Zürich
+project_link_abs: true
+project_link_imgs: true
+project_link_paper: false
+project_link_videos: true
+project_link_bibtex: false
+slideshow:
+    imgs:
+        - path: /assets/imgs/P-srcs_abinitiomdatom/slide-overview.png
+          number: 1
+          caption: Overview of the program 'AbInitioMDAtom'
+        - path: /assets/imgs/P-srcs_abinitiomdatom/slide-nobel-gases.png
+          number: 2
+          caption: Results from Nobel-gases simulations
+        - path: /assets/imgs/P-srcs_abinitiomdatom/slide-not-so-nobel-gases.png
+          number: 3
+          caption: Results from 'Not-so-nobel-gases' simulations
+    total: 3
+---
+<a id="abs">
+    <h3> Abstract </h3>
+    <p> Perform ab initio calculations of different gases. Reproduce MD
+      simulations of noble gases (He, Ne, Ar, Kr) under hard-wall boundary conditions
+      and compare them with simulations involving a Lennard-Jones potential only.
+      Then, study how different the properties of diatomic gases (H2, N2, O2) are. 
+    <br>
+    <br>
+      This is the programming exercises of the course Statistical Physics and Computer Simulation 
+      at the ETHZ. We learned to execute and understand a given computer program for numerical 
+      simulations, to program a physical or chemical problem, to test and debug the programs and 
+      to interpret the results obtained from simulations.
+    <br>
+      The exercises are based on a simple molecular dynamics program for atoms. We have to make changes 
+      to the program and implement new features, basic knowledge in the C++ programming language is required.</p>
+</a>
+
+<br>
+    
+<a id="imgs">
+    <h3> Example Images </h3>
+    {% include slideshow.html data=page.slideshow %}
+</a>
+
+<br>
+
+<style>
+.video-div {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+</style>
+
+<a id="videos">
+  <h3> Video Example from the Simulations </h3>
+  <div class="video-div">
+    <div style="flex: 0 0 75%;">
+      <video width="33%" height="auto" controls loop>
+        <source src="/assets/imgs/P-srcs_abinitiomdatom/helium.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div style="flex: 0 0 24%; margin-left: 20px;">
+      <h4>Helium</h4>
+      <ul>
+        <li>(2.5 nm)^3 Box</li>
+        <li>125 Atoms</li>
+        <li>15 fs/s (60 FPS) Timestep</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="video-div">
+    <div style="flex: 0 0 75%;">
+      <video width="33%" height="auto" controls loop>
+        <source src="/assets/imgs/P-srcs_abinitiomdatom/hydrogen.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div style="flex: 0 0 24%; margin-left: 20px;">
+      <h4>Hydrogen</h4>
+      <ul>
+        <li>(2 nm)^3 Box</li>
+        <li>64 Molecules</li>
+        <li>3.75 fs/s (60 FPS) Timestep</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="video-div">
+    <div style="flex: 0 0 75%;">
+      <video width="33%" height="auto" controls loop>
+        <source src="/assets/imgs/P-srcs_abinitiomdatom/neon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div style="flex: 0 0 24%; margin-left: 20px;">
+      <h4>Neon</h4>
+      <ul>
+        <li>(1.5 nm)^3 Box</li>
+        <li>27 Atoms</li>
+        <li>15 fs/s (60 FPS) Timestep</li>
+      </ul>
+    </div>
+  </div>
+	
+</a>
