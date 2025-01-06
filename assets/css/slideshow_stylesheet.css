@@ -3,8 +3,10 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  height: 400px;
   position: relative;
   margin: auto;
+  justify-content: center;
 }
 
 /* Hide the images by default */
@@ -95,7 +97,8 @@
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  height: 400px;
+  max-height: 400px;
+  max-width: 100%;
 }
 
 @keyframes fade {
