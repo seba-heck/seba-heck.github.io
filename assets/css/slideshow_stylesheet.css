@@ -7,11 +7,16 @@
   position: relative;
   margin: auto;
   justify-content: center;
+  align-items: center;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* <-- vertikale Zentrierung */
+  height: 100%;  
 }
 
 /* Next & previous buttons */
@@ -94,6 +99,8 @@
 /* center image */
 .image_slideshow {
   display: block;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   width: auto;
