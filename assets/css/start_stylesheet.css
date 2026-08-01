@@ -125,22 +125,22 @@ article {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für die Bilder */
     transition: transform 0.3s ease; /* Sanfte Animation beim Hover */
 }
-  
+
 .image-container img:hover {
     transform: scale(1.05); /* Vergrößern beim Hover */
 }
-  
+
 /* Responsives Design */
 @media (max-width: 768px) {
     .image-container {
-      grid-template-columns: repeat(2, 1fr); /* Zwei Spalten bei mittleren Bildschirmen */
-      grid-template-rows: repeat(2, 1fr);    /* Zwei Reihen */
+        grid-template-columns: repeat(2, 1fr); /* Zwei Spalten bei mittleren Bildschirmen */
+        grid-template-rows: repeat(2, 1fr);    /* Zwei Reihen */
     }
 }
-  
+
 @media (max-width: 480px) {
     .image-container {
-      grid-template-columns: 1fr; /* Eine Spalte bei kleinen Bildschirmen */
-      grid-template-rows: repeat(4, 1fr); /* Vier Reihen */
+        grid-template-columns: 1fr; /* Eine Spalte bei kleinen Bildschirmen */
+        grid-template-rows: repeat(4, 1fr); /* Vier Reihen */
     }
 }
