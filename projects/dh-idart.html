@@ -9,76 +9,43 @@ project_code: Python, PyTorch
 project_time: FS 2025
 project_place: ETH Zürich
 project_link_abs: true
-project_link_imgs: true
-project_link_paper: true
+project_link_imgs: false
+project_link_github: true
 project_link_videos: true
 project_link_bibtex: false
-slideshow:
-    imgs:
-        - path: [Pfad zur Bild-datei]
-          number: [Nummer]
-          caption: [Bildunterschrift]
-    total: [Totale Anzahl Bilder]
 ---
 <a id="abs">
     <h3> Abstract </h3>
-    <p> ... </p>
+    <p> Text-conditioned human motion generation allows for intuitive control over digital humans via natural language. The recent framework DART enables real-time motion generation through latent diffusion and autoregressive control, also allowing goal-reaching motion. However, this model sometimes results in physically implausible results and collisions with the surrounding scene. To address this limitation, we present an extension of DART, incorporating the volumetric body model VolumetricSMPL. We leverage a signed distance field representation of the body model and incorporate it into the given DART framework. We show that our extension reduces collisions by more than 50% on average while maintaining adherence to high-level textual goals. Ablation studies further analyze the trade-offs introduced by volumetric constraints. Our results demonstrate that incorporating volumetric body geometry significantly improves scene-aware motion generation in complex 3D environments. </p>
 </a>
-
-<br>
-    
-<a id="imgs">
-    <h3> Example Images </h3>
-    {% include slideshow.html data=page.slideshow %}
-</a>
-
-<br>
-
-<a id="paper">
-    <h3> Paper Website </h3>
-    {% include link_box.html 
-        url="[URL to Datei]" 
-        img="https://www.research-collection.ethz.ch/themes/Mirage2//images/favicons/apple-touch-icon-180x180-precomposed.png" 
-        website="[Überschrift]"
-        content="<h2> [Titel/Name] </h2>
-        <h3> [Unterschrift/Beschreibung] </h3>
-        <p>
-            Author: ... <br>
-            Supervisor: ...
-        </p>" 
-        external=true %}
-</a>
-
-<a href="[Pfad zur Datei]" style="text-decoration: none; color:#fff; font-size: 20px;">
-    <div style="background-color: var(--accent1-color);
-                border-radius: 8px;
-                padding: 2%;
-                margin-top:3%;
-                text-align: center;
-                box-shadow: 0 0 10px rgba(0,0,0,.5);">
-        [Name des Dokuments (PDF)]
-    </div>
-  </a>
-
-  <br>
-  
-  {% include pdf-box.html path="[Pfad zur Datei]" %}
-
 
 <br>
 
 <a id="videos">
   <h3> Video Compilation of Examples </h3>
   <div>
-    <iframe width="840" height="473" src="https://www.youtube.com/embed/videoseries?si=Nv67L9YuqkbzjZ5B&amp;list=PLj7mwiS5EnRwWLIT1zrA9QLVDRp0v5zIZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <img width="840" height="473" src="https://github.com/seba-heck/iDART/raw/main/bin/examples/examples-compilation.gif" alt="Compilation of Examples" frameborder="0">
   </div>
-
-	<video width="33%" height="auto" controls loop>
-		<source src="[Pfad zur Datei]" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
 </a>
 
+<br>
+
+<a id="github">
+    <h3> GitHub Website </h3>
+    {% include link_box.html 
+        url="https://github.com/seba-heck/iDART" 
+        img="../assets/imgs/icons/github-mark.svg" 
+        website="seba-heck / iDART"
+        content="<h2> iDART: Synthesizing Interactive Human Behavior </h2>
+        <h3> Course group project for the course Digital Human at ETH Zürich.</h3>
+        <p>
+            Author: Liza Polupanova, David Blickenstorfer, Sebastian Heckers <br>
+            Supervisor: Kaifeng Zhao
+        </p>" 
+        external=true %}
+</a>
+
+<!--
 <br>
 
 <a id="bibtex">
@@ -86,4 +53,4 @@ slideshow:
   {% include code-box.html id="bibtex-code-ba" language="BibTex"
     content="    ...     " %}
 </a>
-    
+-->
