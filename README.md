@@ -11,7 +11,7 @@ You can see the website here: [https://seba-heck.github.io](https://seba-heck.gi
 - **_site/**: the build static website
 - **assets/**
   - css/: CSS stylesheets
-  - imgs/: images (png, jpg) and icons (svg)
+  - imgs/: images and icons (png, jpg, svg)
   - js/: Javascript source files
 - **files/**: additional files
 - **projects/**: sites for project posts
