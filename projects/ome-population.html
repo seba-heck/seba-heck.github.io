@@ -1,0 +1,82 @@
+---
+layout: project_site
+title: OME Course Project - Discovery of PDEs with Population-Based Optimization
+project_title: Discovery of PDEs with Population-Based Optimization
+project_subtitle: Optimization Methods for Engineers
+project_type: Course Project
+project_front: /assets/imgs/P-ome_population/front_page__OME_Project__Report.png
+project_code: Python
+project_time: 08.2025
+project_place: ETH Zürich
+project_link_abs: true
+project_link_imgs: true
+project_link_paper: true
+slideshow:
+    tag: 1
+    imgs:
+        - path: /assets/imgs/P-ome_population/compare_1.png
+          number: 1
+          caption: Visualisation of PDEs from different methods for dataset 1.
+        - path: /assets/imgs/P-ome_population/history_main_1.png
+          number: 2
+          caption: Plot of Fitness value during iterations for dataset 1.
+        - path: /assets/imgs/P-ome_population/compare_2.png
+          number: 3
+          caption: Visualisation of PDEs from different methods for dataset 2.
+        - path: /assets/imgs/P-ome_population/history_main_2.png
+          number: 4
+          caption: Plot of Fitness value during iterations for dataset 2.
+        - path: /assets/imgs/P-ome_population/compare_5.png
+          number: 5
+          caption: Visualisation of PDEs from different methods for dataset 5.
+        - path: /assets/imgs/P-ome_population/history_main_5.png
+          number: 6
+          caption: Plot of Fitness value during iterations for dataset 5.
+    total: 6
+---
+<a id="abs">
+    <h3> Abstract </h3>
+    <p>In the scientific fields Partial Differential Equations (PDE) are used to describe the world.
+Traditional methods for deriving PDEs were using conservation laws, physical principles and
+other phenomenological behaviors. Since discovering these equations is such an important part
+of science new data-driven methos were developed.
+This is a long standing topic and various methods were explored, but outstanding are Symbolic
+Regression and Evolutionary algorithms. These methods use spatio-temporal data and
+regression frameworks to find the fitting equation. Specific methods for PDEs were developed with sparse regression. But this method is computational expensive and is therefore limited
+to smaller function space. To increase the capabilities, new optimization method are proposed
+namely population-based optimization methods. These methods can be very effective and
+should have a smaller footprint.
+The current state-of-the-art methods often use graph representations for the functions and
+modify it with genetic algorithms. With this approach it is possible to explore an almost
+unlimited space of equations.</p>
+</a>
+
+
+
+<br>
+    
+<a id="imgs">
+    <h3> Example Images </h3>
+    {% include slideshow.html data=page.slideshow %}
+</a>
+
+<br>
+
+<a id="paper">
+  <h3> Report </h3>
+  <a href="/files/Sebastian_Hecker__OME_Project__Discovery_PDEs_with_PopulationBased_Optimization.pdf" style="text-decoration: none; color:#fff; font-size: 20px;">
+    <div style="background-color: var(--accent1-color);
+                border-radius: 8px;
+                padding: 2%;
+                margin-top:3%;
+                text-align: center;
+                box-shadow: 0 0 10px rgba(0,0,0,.5);">
+        Presentation of 'Discovery of PDEs with Population-Based Optimization' (PDF)
+    </div>
+  </a>
+
+  <br>
+  
+  {% include pdf-box.html path="/files/Sebastian_Hecker__OME_Project__Discovery_PDEs_with_PopulationBased_Optimization.pdf" %}
+
+</a>
