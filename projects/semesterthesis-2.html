@@ -3,25 +3,43 @@ layout: project_site
 title: Semester Thesis - Machine Learning of PDEs in 3D
 project_title: Towards Machine Learning of PDEs in 3D
 project_type: Semester Thesis
-project_front: [teaser/titelseiten, Bild an linken Seiten]
+project_front: /assets/imgs/P-sa_ml_pde_3d/front_page__Report__MLPDEs3D.png
 project_code: Python, FEniCS, netCDF
 project_time: FS 2025
 project_place: CAMLab, ETH Zürich
 project_link_abs: true
 project_link_imgs: true
-project_link_paper: flase
-project_link_videos: flase
+project_link_paper: false
+project_link_videos: false
 project_link_bibtex: false
 slideshow:
     imgs:
-        - path: [Pfad zur Bild-datei]
-          number: [Nummer]
-          caption: [Bildunterschrift]
-    total: [Totale Anzahl Bilder]
+        - path: /assets/imgs/P-sa_ml_pde_3d/example_poi_pyvista.png
+          number: 1
+          caption: Sample, source and result, of Poisson Equation
+        - path: /assets/imgs/P-sa_ml_pde_3d/example_adv_pyvista.png
+          number: 2
+          caption: Sample, source and result, of Advection-Diffusion Equation
+        - path: /assets/imgs/P-sa_ml_pde_3d/example_hel_pyvista.png
+          number: 3
+          caption: Sample, source and result, of Helmholtz Equation
+        - path: /assets/imgs/P-sa_ml_pde_3d/helm_res_32.png
+          number: 4
+          caption: Testing the possible resolution for Helmholtz dataset (32 points).
+        - path: /assets/imgs/P-sa_ml_pde_3d/helm_res_64.png
+          number: 5
+          caption: Testing the possible resolution for Helmholtz dataset (64 points).
+        - path: /assets/imgs/P-sa_ml_pde_3d/uh_helmholtz_32_res.png
+          number: 6
+          caption: Visualisation of the possible resolution for Helmholtz dataset (32 points).
+        - path: /assets/imgs/P-sa_ml_pde_3d/uh_comparison_0_1.png
+          number: 7
+          caption: Validation of Poisson equation sample.
+    total: 7
 ---
 <a id="abs">
     <h3> Abstract </h3>
-    <p> ... </p>
+    <p> This work presents a methodical approach to generate large-scale, high-resolution datasets of three-dimensional partial differential equations (PDEs), including Poisson, Advection-Diffusion, and Helmholtz equations. Using the FEniCS finite element framework, solutions are computed over a structured tetrahedral mesh with randomized, parameterized source terms and PDE coefficients. The method ensures physical diversity and numerical consistency while maintaining computational efficiency through controlled and tested sampling methods. The resulting datasets are designed to support data-driven modeling and machine learning applications in scientific computing, offering a foundation for training neural operators or foundation models in 3D PDE scenarios.</p>
 </a>
 
 <br>
