@@ -5,6 +5,12 @@ This repository contains all source files and assets for my personal portfolio w
 
 You can see the website here: [https://seba-heck.github.io](https://seba-heck.github.io/index.html)
 
+<p float="middle">
+  <img src="/assets/imgs/P-ba_let_the_best_sim_win/002_BA_viewer_m.png" width="40%" />
+  <img src="/assets/imgs/P-ma_em_dataset_for_ml/MAX_3D_TEAM24_visu_60.png" width="29%" /> 
+  <img src="/assets/imgs/P-ma_em_dataset_for_ml/MAX_3D_Waverider_exp_res_1.png" width="26%" />
+</p>
+
 ## Content
 - **_includes/**: HTML-files with code snippets to include
 - **_layouts/**: site templates
